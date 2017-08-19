@@ -1,9 +1,18 @@
 
-var videoTags = document.getElementsByTagName("video")
+var videoTags = document.getElementsByTagName('video')
 for (var i = 0; i < videoTags.length; i++) {
 	videoTags[i].addEventListener('click', function (e) {
 		if (this.paused) this.play()
 		else this.pause()
+	})
+}
+
+var audioTags = document.getElementsByTagName('audio')
+for (var i = 0; i < audioTags.length; i++) {
+	audioTags[i].addEventListener('play', function (e) {
+		for (var j = 0; j < audioTags.length; j++) {
+			if (audioTags[j] != e.target) audioTags[j].pause()
+		}
 	})
 }
 

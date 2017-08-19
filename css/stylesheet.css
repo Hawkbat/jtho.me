@@ -17,6 +17,10 @@ body {
 	align-items: center;
 }
 
+.mono {
+	font-family: monospace;
+}
+
 img {
 	-khtml-user-select: none;
 	-o-user-select: none;
@@ -111,6 +115,7 @@ section.carousel .left, section.carousel .right {
 	background: rgba(255, 255, 255, .25);
 	color: rgba(255, 255, 255, .5);
 	cursor: pointer;
+	top: 0;
 }
 
 section.carousel .left {
@@ -245,6 +250,30 @@ section.links a:hover {
 	background: #ddd;
 }
 
+section.tracks {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 960px;
+	width: 100%;
+}
+
+section.tracks article {
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 auto;
+	width: 300px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+section.tracks article audio {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
 footer {
 	margin: 20px;
 	width: 100%;
@@ -293,8 +322,12 @@ body.overlay #overlay img {
 }
 
 @media (max-width: 960px) {
-	section.thumbs {
+	section.thumbs, section.tracks {
 		justify-content: center;
+	}
+
+	section.tracks article {
+		margin: 10px;
 	}
 
 	section.thumbs article {
