@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/cg-awesome.min.css">
+	<link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="/" class="title">Joshua Thome</a>
+			<a href="/code/" class="active">Code</a>
+			<a href="/design/">Design</a>
+			<a href="/art/">Art</a>
+			<a href="/music/">Music</a>
+		</nav>
+	</header>
+	<main>
+		<section class="heading">
+			<b>WebAssemblyScript (<a href="https://github.com/Hawkbat/WAScript">Github</a>)</b>
+			<div>A simple C-like language which compiles to the WebAssembly binary format. Features strong explicit typing, clean syntax, and near-complete feature parity with WebAssembly, producing binaries up to 90% smaller than the equivalent C++ code. The project includes a token lexer, AST parser, syntax validator, semantic type analyzer, pretty-print formatter, and WASM bytecode generator, all written in TypeScript as a bundled Node module.</div>
+			<br>
+			<div>
+				Recursive Fibonacci function example:
+				<pre>
+export int fibonacci(int n)
+	if n <= 1
+		return 1
+	return fibonacci(n - 1) + fibonacci(n - 2)
+			</pre>
+			</div>
+			<div>
+				Nonsensical, comprehensive syntax example:
+				<pre>
+int y = 1333 // Set up y
+
+export const int SOME_CONST = 5
+
+void main()
+	DoSomething(true, 23ul)
+
+export void DoSomething(bool alphabet, ulong soup)
+	int z = 10 / SOME_CONST / 1f as int
+	// Initialize x
+	int x = (50.0f + -20f + 2f * float.floor(20.5f)) to int |> SOME_CONST
+	y = -y
+	if x == 70 & SOME_CONST // Check logic
+		x = ((20f + 10ul to float) * float.ceil(20.25f)) to int
+		if !alphabet && x == 20
+			nop()
+		else if y == 70
+			while y > 0
+				y = y - 15
+				if y < 0
+					break
+				else
+					continue
+				bool foo = true
+			DoSomething(!alphabet, soup)
+		else
+			nop() // Null operation
+		return
+
+export int add(int a, int b)
+	return a + b
+				</pre>
+			</div>
+		</section>
+		<section class="heading">
+			<b>Reptile Voxel Tool (<a href="https://github.com/Hawkbat/Reptile">Github</a>)</b>
+			<div>
+				A cross-platform voxel art authoring tool built in and integrated with Unity to make creating voxel art for game environments quick and painless. Coded in C# as a standalone Unity application.
+			</div>
+		</section>
+		<section class="thumbs">
+			<article><img src="https://raw.githubusercontent.com/Hawkbat/Reptile/master/Docs/Screenshots/s0.png"><b></b></article>
+			<article><img src="https://raw.githubusercontent.com/Hawkbat/Reptile/master/Docs/Screenshots/s1.png"><b>Brushes</b></article>
+			<article><img src="https://raw.githubusercontent.com/Hawkbat/Reptile/master/Docs/Screenshots/s2.png"><b>Materials</b></article>
+			<article><img src="https://raw.githubusercontent.com/Hawkbat/Reptile/master/Docs/Screenshots/s3.png"><b>Symmetry</b></article>
+			<article><img src="https://raw.githubusercontent.com/Hawkbat/Reptile/master/Docs/Screenshots/s4.png"><b>Isometric</b></article>
+			<article><img src="https://raw.githubusercontent.com/Hawkbat/Reptile/master/Docs/Screenshots/s5.png"><b>Orthographic</b></article>
+			<article><img src="https://raw.githubusercontent.com/Hawkbat/Reptile/master/Docs/Screenshots/s6.png"><b>Perspective</b></article>
+			<article><img src="https://raw.githubusercontent.com/Hawkbat/Reptile/master/Docs/Screenshots/s7.png"><b>Layers</b></article>
+			<article><img src="https://raw.githubusercontent.com/Hawkbat/Reptile/master/Docs/Screenshots/s8.png"><b>MagicaVoxel</b></article>
+		</section>
+		<section class="links">
+			<a href="mailto:josh@jthome.me">
+				<i class="fa fa-envelope fa-3x fa-fw"></i>
+				<div>Email Me</div>
+			</a>
+			<a href="https://linkedin.com/in/joshua-thome">
+				<i class="fa fa-linkedin-square fa-3x fa-fw"></i>
+				<div>LinkedIn</div>
+			</a>
+			<a href="https://github.com/Hawkbat">
+				<i class="fa fa-github fa-3x fa-fw"></i>
+				<div>Github</div>
+			</a>
+			<a href="https://vimeo.com/joshthome">
+				<i class="fa fa-vimeo fa-3x fa-fw"></i>
+				<div>Vimeo</div>
+			</a>
+			<a href="https://hawkbat.artstation.com/">
+				<i class="cg cg-artstation fa-3x fa-fw"></i>
+				<div>ArtStation</div>
+			</a>
+			<a href="https://soundcloud.com/hawkbat">
+				<i class="fa fa-soundcloud fa-3x fa-fw"></i>
+				<div>SoundCloud</div>
+			</a>
+		</section>
+	</main>
+	<footer>© 2017 Joshua Thome. All Rights Reserved.</footer>
+	<div id='overlay'>
+		<img src="">
+	</div>
+	<script src="/js/main.js"></script>
+</body>
+
+</html>
