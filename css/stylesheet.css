@@ -293,7 +293,7 @@ pre {
 	border-radius: 5px;
 	background-color: #ddd;
 	padding: 5px 10px;
-	overflow: scroll;
+	overflow: auto;
 }
 
 #overlay {
