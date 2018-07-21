@@ -27,7 +27,7 @@ if (overlay) {
 	for (var i = 0; i < thumbs.length; i++) {
 		thumbs[i].addEventListener('click', function (e) {
 			document.body.classList.add('overlay')
-			overlay.children[0].src = this.src.replace('/art/', '/art-full/')
+			overlay.children[0].src = this.src.replace('thumb/', 'fullres/')
 		})
 	}
 
