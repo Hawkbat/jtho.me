@@ -13,7 +13,10 @@ body {
 	font-size: 14pt;
 	font-family: 'Roboto', sans-serif;
 	color: #222;
-	background-color: #eee;
+	background: #eee;
+	background-image: url(/Logo.png);
+	background-size: 100% auto;
+	background-attachment: fixed;
 	align-items: center;
 }
 
@@ -29,11 +32,19 @@ img {
 	user-select: none;
 }
 
+a {
+	color: #09f;
+}
+
 header {
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	background: linear-gradient(#eee, #ddd);
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	border-bottom: 1px solid #bbb;
 }
 
 nav {
@@ -54,7 +65,7 @@ nav a {
 	font-weight: bold;
 	text-decoration: none;
 	text-align: center;
-	color: inherit;
+	text-shadow: 0 0 2px white;
 	border-right: 1px solid #bbb;
 	border-top: 1px solid transparent;
 }
@@ -254,6 +265,7 @@ section.links a {
 
 section.links a div {
 	text-decoration: underline;
+	color: #009fff;
 }
 
 section.links a:hover {
@@ -354,6 +366,10 @@ body.overlay #overlay img {
 }
 
 @media (max-width: 720px) {
+	header {
+		position: static;
+	}
+
 	nav a.title {
 		flex: 0 0 90%;
 		border-right: 0px;
